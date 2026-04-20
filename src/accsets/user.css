@@ -1,0 +1,62 @@
+.user-0{
+ padding: 40px;
+ background-color:#0f1117;
+ width: 100%;
+}
+.user-1 {
+    padding: 20px;
+    background-color:  #161b27;
+   border: 1px solid #1e2535;
+    border-radius: 20px;
+   
+}
+.tuser-0{
+  /* background-color: aqua; */
+ display: inline-block;
+margin: 5px;
+}
+.userlist1{
+    margin-bottom: 10px;
+}
+.newuser-1 {
+    padding: 10px;
+      /* margin-bottom: 30 px; */
+      
+      margin-bottom: 8px;
+  
+}
+.newuserform{
+  
+display: flex; 
+
+flex-direction: column;
+row-gap: 12px;
+}
+.quackdata-1 {
+    display: flex;
+   flex-direction: column;
+ margin-bottom: 10px;
+}
+.quackdata-2 {
+margin-bottom: 5px;
+
+}
+.first-user{
+    margin:15px  ;
+    padding: 10px;
+  
+}
+.first-delet {
+  margin-left: 150px;
+}
+.fond-user{
+    margin-bottom: 10px;
+}
+.user-circul{
+    padding: 10px;
+    margin: 10px;
+}
+.find-role{
+    padding: 5px;
+    margin:5px ;
+}
