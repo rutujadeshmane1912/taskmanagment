@@ -23,15 +23,20 @@ const addTask = (task)=>{
 
    const toggleTask = (index) => {
   // 1. Pehle purani state ki ek copy banayein
+  // console.log("index",index)
+  // console.log("taskdata",Taskdata)
   const updatedTasks = [...Taskdata];
+  // console.log("updatedTasks",updatedTasks)
 
   // 2. Us specific index wale task ki 'completed' property ko ulta (toggle) kar dein
   // Agar false hai toh true, true hai toh false
   updatedTasks[index] = {
+ 
+  
+    
     ...updatedTasks[index],
-    completed: !updatedTasks[index].completed
+    cheacked: !updatedTasks[index].cheacked
   };
-
   // 3. State update karein
   setTaskdata(updatedTasks);
 };

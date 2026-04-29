@@ -2,7 +2,7 @@ import React from 'react'
 
 const TaskCard = ({Taskdata,}) => {
 
-const completedCount = Taskdata.filter(task => task.completed === true).length;
+const completedCount = Taskdata.filter(task => task.cheacked === true).length;
 const pendingCount = Taskdata.length - completedCount;
 const progressPercent = Taskdata.length > 0 
     ? Math.round((completedCount / Taskdata.length) * 100) 

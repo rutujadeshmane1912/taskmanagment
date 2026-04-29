@@ -43,9 +43,9 @@ const Taskfrom = ({Tuser,addTask}) => {
     
             <form className="tm-form-panel" onSubmit={handlesub}>
               <div className="tm-form-title">New Task</div>
-              <input className="tm-input" name='tittle' value={tfd.tittle}   placeholder="Task title *" onChange={ handleuserchange}  />
+              <input className="tm-input" name='tittle' value={tfd.tittle}   placeholder="Task title " onChange={ handleuserchange}  />
               <textarea className="tm-input tm-textarea"    name='Description' value={tfd.Description} onChange={ handleuserchange}  placeholder="Description (optional)"  />
-              <select className="tm-select"  name='UserName' value={tfd.UserName} onChange={ handleuserchange} >
+              <select className="tm-select"   name='UserName' value={tfd.UserName} onChange={ handleuserchange} >
                  <option  disabled>-- Assign to User --</option>
                 {Tuser.map((item,index)=>{
                 return  ( <option key={index}> {item}</option>)
