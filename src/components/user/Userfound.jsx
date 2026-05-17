@@ -23,11 +23,11 @@ const Userfound = ({user ,DelUser}) => {
       
    {user.map((item,index)=>{
     return (
-   <div  className=' ml-20' key={index}>
+   <div  className=' ml-20   userfounds' key={index}>
    
     
     <div 
-     className='flex   first-user   w-[550px] rounded-2xl  m-1 bg-slate-900 border-gray-400  border border-gray-700 shadow-xl bg-slate-900 border-gray-400 text-white w=[]'>
+     className=' bg-slate-900 border-gray-400   userf1 border border-gray-700 shadow-xl bg-slate-900 border-gray-400 text-white'>
         <div className='w-[46px] ml-2 mt-6 p-2 bg-blue-500 h-[45px] rounded-full  user-circul text-center'
         >{item.fullName.substring(0,2)}</div>
         <div className='m-4  fond-user  '  ><h3>{item.fullName}</h3>
@@ -37,7 +37,7 @@ const Userfound = ({user ,DelUser}) => {
         
 
         </div>
-        <button  className="border     first-delet  text-white w-[80px]  h-[35px] border-gray-400 p-2 rounded-lg  mt-8 ml-50 focus:outline-none focus:ring-2 focus:ring-indigo-500" 
+        <button  className="border     first-delet  text-white w-[80px]  h-[35px] border-gray-400 p-2 rounded-lg   focus:outline-none focus:ring-2 focus:ring-indigo-500" 
         onClick={()=> DelUser(index)}
         >Delete</button>
     </div>    

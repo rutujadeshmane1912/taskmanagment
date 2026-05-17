@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Taskfrom = ({Tuser,addTask}) => {
+const Taskfrom = ({Tuser,addTask ,dsahadduser,complete}) => {
 
 
 
@@ -16,6 +16,9 @@ const Taskfrom = ({Tuser,addTask}) => {
     const handlesub =(e)=>{
    e.preventDefault()
     addTask(tfd)
+    if(dsahadduser) dsahadduser(tfd.datainput)
+
+     
     setTfd({
         tittle:"",
   Description:"",
@@ -46,9 +49,9 @@ const Taskfrom = ({Tuser,addTask}) => {
               <input className="tm-input" name='tittle' value={tfd.tittle}   placeholder="Task title " onChange={ handleuserchange}  />
               <textarea className="tm-input tm-textarea"    name='Description' value={tfd.Description} onChange={ handleuserchange}  placeholder="Description (optional)"  />
               <select className="tm-select"   name='UserName' value={tfd.UserName} onChange={ handleuserchange} >
-                 <option  disabled>-- Assign to User --</option>
+                 <option  value="">-- Assign to User --</option>
                 {Tuser.map((item,index)=>{
-                return  ( <option key={index}> {item}</option>)
+                return  ( <option key={index} value={item}> {item}</option>)
 }               )}
                
               </select>

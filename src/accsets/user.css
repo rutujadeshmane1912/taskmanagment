@@ -4,14 +4,21 @@
  width: 100%;
 }
 .user-1 {
-    padding: 20px;
-    background-color:  #161b27;
+   
+   
    border: 1px solid #1e2535;
     border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 0;
+    width: 100%;
+    padding: 40px;
+    gap: 20px;
+    background-color:#0f1117;
    
 }
 .tuser-0{
-  /* background-color: aqua; */
+ 
  display: inline-block;
 margin: 5px;
 }
@@ -20,7 +27,7 @@ margin: 5px;
 }
 .newuser-1 {
     padding: 10px;
-      /* margin-bottom: 30 px; */
+     
       
       margin-bottom: 8px;
   
@@ -59,4 +66,211 @@ margin-bottom: 5px;
 .find-role{
     padding: 5px;
     margin:5px ;
+}
+
+.user-man{
+    display: flex;
+    gap: 20px;
+    background-color: #161b27;
+   padding: 20px;
+    height:100%;
+}
+.userf1{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 12px;
+}
+.userfounds{
+    width: 100%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+.con-1{
+    display: flex;
+}
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.user-0 {
+  padding: 40px;
+  background-color: #0f1117;
+  width: 100%;
+}
+
+.user-1 {
+  border: 1px solid #1e2535;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  background-color: #0f1117;
+}
+
+
+.user-man {
+  display: flex;
+  gap: 20px;
+  background-color: #161b27;
+  min-height: 100vh;
+}
+
+
+.newuserform {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.quackdata-1 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.quackdata-2 {
+  margin-bottom: 5px;
+}
+
+
+
+@media (max-width: 1124px) {
+.userlist1 input {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+   .userfounds{
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .user-1 {
+    flex-direction: column;
+  }
+
+  .user-man {
+    flex-direction: column;
+  }
+
+  .user-name {
+    margin: 15px;
+    padding: 20px;
+  }
+   
+ .first-user{
+  width: 100%;
+ }
+ .userfounds{
+    width: 100% !important;
+    margin-left: 0 !important;
+  
+  }
+  .newuser-1,
+  .quackdata-1 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .user-0 {
+    padding: 15px;
+  }
+
+  .user-1 {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .user-man {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .user-name {
+    margin: 10px;
+    padding: 15px;
+    width: auto;
+  }
+
+  .newuser-1,
+  .quackdata-1 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .first-delet {
+    margin-left: 0;
+  }
+
+  .userlist1 input {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+   .userfounds{
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .user-0 {
+    padding: 10px;
+  }
+
+  .user-name {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .user-1 {
+    gap: 10px;
+  }
+  .userf1{
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+
+}
+.quackdata-2 {
+    
+   height: 20px;
+}
+}
+
+
+@media (max-width: 1020px) {
+.new5{
+    width: 100%;
+}
+.con-1{
+    flex-direction: column;
+}
+
 }

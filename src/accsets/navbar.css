@@ -1,0 +1,38 @@
+.nav_logo img{
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s;
+    cursor: pointer;
+  margin: 15px;
+
+}
+.nav_links{
+    color: aliceblue; 
+    margin: 30px; 
+   
+}
+
+.nav_links li{
+    padding: 8px;
+   
+    margin-top:10px ;
+   cursor: pointer;
+}
+.nav_links {
+  display: none;
+}
+
+
+.nav_links.active {
+  display: block;
+}
+.logo-img{
+    background-color: #1e2535;
+    margin: 0;
+    
+    height: 100%;
+}
+
+  
+
+ 

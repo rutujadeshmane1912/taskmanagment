@@ -1,11 +1,13 @@
-import React, { useState ,useEffect } from 'react'
+import React, { useState  } from 'react'
 import TaskCard from '../components/task/Taskcard'
 import Taskfrom from '../components/task/Taskform'
 import Tasklist from '../components/task/Tasklist'
 import '../accsets/Task.css'
-const Taskmanger = ({Tuser}) => {
-const tasklist = localStorage.getItem("task")
-const [ Taskdata,setTaskdata]= useState(   tasklist ? JSON.parse(tasklist) :  [])
+import     '../accsets/navbar.css'
+import Navigation from '../components/Navigation/Navigation'
+const Taskmanger = ({Tuser ,dsahadduser,Taskdata,setTaskdata}) => {
+// const tasklist = localStorage.getItem("task")
+// const [ Taskdata,setTaskdata]= useState(   tasklist ? JSON.parse(tasklist) :  [])
 
 const addTask = (task)=>{
   setTaskdata((pre)=>    [...pre,task])
@@ -15,9 +17,9 @@ const addTask = (task)=>{
   
 
 }
- useEffect(() => {
-    localStorage.setItem("task", JSON.stringify(Taskdata))
-  }, [Taskdata])
+//  useEffect(() => {
+//     localStorage.setItem("task", JSON.stringify(Taskdata))
+//   }, [Taskdata])
 
 
 
@@ -56,8 +58,12 @@ const addTask = (task)=>{
      <>
 
       <div className="tm-root">
+        <div className='nav-task'>
+           <Navigation/>
+        </div>
         <div className="tm-card">
-
+          
+ 
 <TaskCard   Taskdata={Taskdata}     />
           <div className="tm-tabs">
             <div className="tm-tab active">All ({Taskdata.length})</div>
@@ -66,7 +72,7 @@ const addTask = (task)=>{
           </div>
 
           <div className="tm-body">
-<Taskfrom  addTask ={addTask}   Tuser ={Tuser}     />
+<Taskfrom  addTask ={addTask}   Tuser ={Tuser}   dsahadduser={dsahadduser}    />
 
             <div>
 <Tasklist     toggleTask={toggleTask}       Taskdata = {Taskdata}  DelUserinfo = {DelUserinfo}  />

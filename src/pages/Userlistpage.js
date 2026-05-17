@@ -4,6 +4,9 @@ import Userfound from '../components/user/Userfound'
 import Userlist from '../components/user/Userlist'
 import Quickdtate from '../components/user/Quickdtate'
 import '../accsets/user.css'
+import     '../accsets/navbar.css'
+
+import Navigation from '../components/Navigation/Navigation'
 
 
 
@@ -94,21 +97,31 @@ const Userlistpage = ({ adduser }) => {
   });
   return (
     <>
-
-      <div className='   h-[580px] bg-slate-700    user-0 '>
+           
+      <div className=' user-man      '>
         <div className='user-1'>
+        
+          <Navigation/>
+        
 
-        <div className='m-6 ml-30     '>
+        <div className='user-name'>
+          <div className='m-6 ml-30     '>
           <h2 className='text-lg text-white '>User Management</h2>
           <span className=' tuser-0    inline-block m-3 text-slate-400'>Total {user.length} {user.length === 1 ? 'user' : 'users'}</span>
         </div>
         <div className=' ml-20  mb-32 userlist1' ><Userlist search={search} setsearch={setsearch} /></div>
-        <div className='  ml-20  relative m-2'><NewUser formData={formData} setFormData={setFormData} handleChange={handleChange} handleSubmit={handleSubmit} />
-          <div className='   ml-20  absolute  top-1  m-4 p-4 left-95   '><Userfound DelUser={DelUser} user={filterdata} /></div>
-        </div>
+        <div className='con-1'>
+         <div className='new5'>
+           <div className='  ml-20 m-2'><NewUser formData={formData} setFormData={setFormData} handleChange={handleChange} handleSubmit={handleSubmit} /> </div>
+          <div className='   ml-20  top-1  m-4 p-4 left-95   '> <Quickdtate count={rolecount} /></div>
+       
+         </div>
 
         <div className=' ml-20 '>
-          <Quickdtate count={rolecount} />
+          <Userfound DelUser={DelUser} user={filterdata} />
+         
+        </div>
+        </div>
         </div>
         </div>
       </div>
